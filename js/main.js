@@ -5,4 +5,11 @@ var instance = new vidbg('.video', {
   overlay: false, // Boolean to display the overlay or not
 });
 
+//запуск паралакс (рокеты)
 var rellax = new Rellax('.rocket');
+
+//остановка паралакса при ширине <576px
+//проверка условия
+if (document.body.clientWidth < 576) {
+  rellax.destroy();
+}
