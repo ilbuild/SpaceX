@@ -13,3 +13,6 @@ var rellax = new Rellax('.rocket');
 if (document.body.clientWidth < 576) {
   rellax.destroy();
 }
+
+//анимация AOS при скролле
+AOS.init();
